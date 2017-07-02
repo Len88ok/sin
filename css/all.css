@@ -1,0 +1,360 @@
+* {
+  margin: 0; }
+
+html, body {
+  height: 100%;
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+ul, ol {
+  padding-left: 0;
+  list-style-type: none; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+a:hover {
+  color: #006DF0; }
+
+.wrapper {
+  min-height: 100%;
+  height: 100%; }
+
+.main-content {
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  text-align: center; }
+
+.page-content {
+  padding-bottom: 80px; }
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .5rem 4rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #ffffff;
+  background-color: transparent;
+  background-image: none;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  outline: none;
+  margin: auto; }
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  transition: all .2s ease-in-out;
+  color: #fff;
+  background-color: #0275d8;
+  border-color: #0275d8;
+  text-transform: uppercase; }
+
+.btn:hover {
+  color: #fff;
+  background-color: #025aa5;
+  border-color: #01549b; }
+
+.content-bg {
+  background: url("../images/1.jpg") no-repeat;
+  background-size: cover; }
+
+.content-overlay {
+  position: relative;
+  z-index: 1; }
+  .content-overlay:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.7;
+    background-color: darkviolet; }
+
+.authorization-block .brand {
+  padding-top: 100px; }
+
+.brand img {
+  margin: auto; }
+
+.authorization-info {
+  margin-bottom: 100px; }
+
+.authorization-form {
+  width: 400px;
+  margin: auto; }
+
+.authorization-form label {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin-bottom: -30px; }
+
+.authorization-form-label {
+  float: left;
+  line-height: 2.5; }
+
+.authorization-form-icon {
+  float: right;
+  width: 30px;
+  height: 40px;
+  background: url("../images/smartphone.svg") no-repeat; }
+
+.authorization-form button {
+  margin-top: 50px; }
+
+@media screen and (max-width: 767px) {
+  .authorization-form {
+    width: 100%;
+    padding: 0 30px; }
+  .authorization-form button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-top: 0; } }
+
+.hamburger-menu {
+  width: 100%;
+  height: 56px;
+  background-color: darkviolet; }
+
+.hamburger-menu .brand {
+  width: 50px;
+  height: 50px;
+  margin: auto; }
+
+.hamburger-menu .brand img {
+  width: 100%;
+  height: 100%; }
+
+.nav-brand {
+  display: inline-block;
+  position: relative;
+  line-height: 2;
+  padding-left: 30px;
+  margin-bottom: 40px; }
+
+.nav-brand:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  width: 120px;
+  height: 2px;
+  background-color: #006DF0; }
+
+.nav-brand a {
+  font-size: 20px; }
+
+.bar, .bar:before, .bar:after {
+  transition: all .25s;
+  content: "";
+  position: absolute;
+  right: 0;
+  left: auto;
+  height: 6px;
+  width: 30px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.95); }
+
+.hamburger-menu-collapsed {
+  transition: all .25s;
+  position: absolute;
+  top: 10px;
+  left: auto;
+  right: 9px;
+  height: 36px;
+  width: 36px;
+  z-index: 1;
+  cursor: pointer; }
+
+.hamburger-menu-collapsed ul {
+  transition: all 0s;
+  position: fixed;
+  left: -9000px; }
+
+.bar {
+  position: absolute;
+  right: 12px;
+  left: auto;
+  top: 14px; }
+
+.bar:before {
+  top: -8px; }
+
+.bar:after {
+  top: 8px; }
+
+.hamburger-menu-expanded .bar:before, .hamburger-menu-expanded .bar:after {
+  transition: all .25s;
+  top: 0; }
+
+.hamburger-menu-expanded {
+  transition: all .25s;
+  text-align: center;
+  line-height: 2;
+  height: 100%;
+  width: 100%;
+  border-radius: 0px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85); }
+
+.hamburger-menu-expanded nav {
+  position: relative;
+  width: 95%;
+  height: 100vh;
+  background: #fff; }
+
+.hamburger-menu-expanded ul {
+  transition: all 0s;
+  position: relative;
+  right: 0;
+  left: auto;
+  z-index: 2;
+  text-align: left;
+  padding: 40px;
+  line-height: 1; }
+
+.hamburger-menu-expanded li {
+  height: 50px; }
+
+.hamburger-menu-expanded li > a {
+  transition: all .15s;
+  text-decoration: none;
+  padding: 5px;
+  display: block;
+  color: #000; }
+
+.hamburger-menu-expanded a:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all .15s;
+  color: #333; }
+
+.hamburger-menu-expanded .bar {
+  background-color: transparent;
+  transition: all .25s; }
+
+.hamburger-menu-expanded .bar:before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.hamburger-menu-expanded .bar:after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.icon {
+  display: inline-block;
+  background-image: url("../images/spritesheet.png");
+  float: left;
+  margin-right: 10px;
+  width: 24px;
+  height: 24px; }
+
+.icon-homepage {
+  background-position: -141px -5px; }
+  .icon-homepage:hover {
+    background-position: -141px -39px; }
+
+.icon-schedule {
+  background-position: -73px -107px; }
+  .icon-schedule:hover {
+    background-position: -107px -107px; }
+
+.icon-events {
+  background-position: -39px -107px; }
+  .icon-events:hover {
+    background-position: -5px -107px; }
+
+.icon-connection {
+  background-position: -39px -39px; }
+  .icon-connection:hover {
+    background-position: -5px -39px; }
+
+.icon-help {
+  background-position: -5px -73px; }
+  .icon-help:hover {
+    background-position: -39px -73px; }
+
+.icon-contacts {
+  background-position: -107px -39px; }
+  .icon-contacts:hover {
+    background-position: -73px -39px; }
+
+.icon-profile {
+  background-position: -73px -73px; }
+  .icon-profile:hover {
+    background-position: -107px -73px; }
+
+.icon-brand {
+  margin-top: 5px;
+  background-position: -5px -5px; }
+
+.image-top {
+  display: inline-block;
+  width: 100%;
+  height: 300px;
+  background: url("../images/sinagoga.jpg");
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.variants {
+  padding: 20px; }
+
+.variants select {
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  padding: 10px 20px; }
+
+.welcome-messege {
+  text-transform: uppercase;
+  color: #006DF0;
+  margin: 20px; }
+
+.welcome-menu {
+  width: 220px;
+  margin: auto; }
+
+.welcome-menu li {
+  padding: 10px;
+  border-bottom: 2px solid #006DF0; }
+
+@media screen and (max-width: 767px) {
+  .hamburger-menu-expanded nav {
+    width: 80%; }
+  .bar {
+    right: 20px; } }

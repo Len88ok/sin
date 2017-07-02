@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="main-content">
+        <section class="hamburger-menu">
+          <div class="brand">
+            <a href="#"><img src="images/checkmark.svg" alt="logo"></a>           
+          </div>
+          <div class="hamburger-menu-collapsed">
+             <div class="bar"></div>
+             <nav>
+                <ul class="nav">
+                  <div class="nav-brand">
+                    <a href="#"><span class="icon icon-brand"></span>Синагога</a>
+                  </div>
+                  <li> 
+                    <i class="icon icon-homepage"></i>
+                    <a href="#">Главная</a>
+                  </li>
+                  <li> 
+                    <i class="icon icon-schedule"></i>
+                    <a href="#">Расписание молитв</a>
+                  </li>
+                  <li> 
+                  <i class="icon icon-events"></i>
+                    <a href="#">Мероприятия</a>
+                  </li>
+                  <li> 
+                    <i class="icon icon-connection"></i>
+                    <a href="#">Обратная связь</a>
+                  </li>
+                  <li> 
+                    <i class="icon icon-help"></i>
+                    <a href="#">Обратиться за помощью</a>
+                  </li>
+                  <li> 
+                    <i class="icon icon-contacts"></i>
+                    <a href="#">Контакты</a>
+                  </li>
+                  <li> 
+                    <i class="icon icon-profile"></i>
+                    <a href="#">Профиль</a>
+                  </li>
+                </ul>
+             </nav>
+          </div>
+        </section>
+        <section class="page-content">
+          <div class="image-top"></div>
+          <div class="variants">
+            <select name="address" id="placement">
+              <option value="bronnaya">Синагога на Большой Бронной</option>
+              <option value="ne_bronnaya">Синагога Еще</option>
+              <option value="ne_ne_bronnaya">Синагога и Еще</option>
+            </select>
+          </div>
+          <div class="welcome">
+            <div class="welcome-messege">Добро пожаловать!</div>
+              <ul class="welcome-menu">
+                <li><a href="#">Расписание молитв</a></li>
+                <li><a href="#">Мероприятия</a></li>
+                <li><a href="#">Расписание</a></li>
+              </ul>
+          </div>
+        </section>        
+      </main>            
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){
+          $(".hamburger-menu-collapsed").click(function() {
+            $(this).toggleClass("hamburger-menu-expanded");
+          });
+      });
+    </script>
+
+
+  </body>
+</html>

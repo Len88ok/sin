@@ -1,0 +1,258 @@
+.hamburger-menu{
+  width: 100%;
+  height: 56px;
+  background-color: darkviolet;
+}
+
+.hamburger-menu .brand{
+    width: 50px;
+    height: 50px;
+    margin: auto;  
+}
+
+.hamburger-menu .brand img{
+    width: 100%;
+    height: 100%;
+}
+
+.nav-brand{
+  display: inline-block;
+  position: relative;
+  line-height: 2;
+  padding-left: 30px;
+  margin-bottom: 40px;
+}
+
+.nav-brand:after{
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  width: 120px;
+  height: 2px;
+  background-color: #006DF0;    
+}
+
+.nav-brand a{
+  font-size: 20px;
+}
+
+.bar, .bar:before, .bar:after {
+  transition: all .25s;
+  content: "";
+  position: absolute;
+  right: 0;
+  left: auto;
+  height: 6px;
+  width: 30px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.hamburger-menu-collapsed {
+  transition: all .25s;
+  position: absolute;
+  top: 10px;
+  left: auto;
+  right: 9px;
+  height: 36px;
+  width: 36px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.hamburger-menu-collapsed ul {
+  transition: all 0s;
+  position: fixed;
+  left: -9000px;
+}
+
+.bar {
+  position: absolute;
+  right: 12px;
+  left: auto;
+  top: 14px;
+}
+
+.bar:before {
+  top: -8px;
+}
+
+.bar:after {
+  top: 8px;
+}
+
+.hamburger-menu-expanded .bar:before, .hamburger-menu-expanded .bar:after {
+  transition: all .25s;
+  top: 0;
+}
+
+.hamburger-menu-expanded {
+  transition: all .25s;
+  text-align: center;
+  line-height: 2;
+  height: 100%;
+  width: 100%;
+  border-radius: 0px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.hamburger-menu-expanded nav{
+  position: relative;
+  width: 95%;  
+  height: 100vh;
+  background: #fff;
+}
+
+.hamburger-menu-expanded ul {
+  transition: all 0s;
+  position: relative;
+  right: 0;
+  left: auto;
+  z-index: 2;
+  text-align: left;
+  padding: 40px;
+  line-height: 1;
+}
+
+.hamburger-menu-expanded li{
+  height: 50px;
+}
+
+.hamburger-menu-expanded li > a {
+  transition: all .15s;
+  text-decoration: none;
+  padding: 5px;
+  display: block;
+  color: #000;
+}
+
+.hamburger-menu-expanded a:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all .15s;
+  color: #333;
+}
+
+.hamburger-menu-expanded .bar {
+  background-color: transparent;
+  transition: all .25s;
+}
+
+.hamburger-menu-expanded .bar:before {
+  transform: rotate(45deg);
+}
+
+.hamburger-menu-expanded .bar:after {
+  transform: rotate(-45deg);
+}
+
+.icon{
+  display: inline-block;
+  background-image: url('../images/spritesheet.png');
+  float: left;
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+} 
+
+.icon-homepage{
+  background-position: -141px -5px;
+  &:hover{
+    background-position: -141px -39px;
+  }
+}
+
+.icon-schedule{  
+  background-position: -73px -107px;
+  &:hover{
+    background-position: -107px -107px;        
+  }
+}
+
+.icon-events{
+  background-position: -39px -107px;
+  &:hover{
+    background-position: -5px -107px;
+  }
+}
+
+.icon-connection{
+  background-position: -39px -39px;
+  &:hover{
+    background-position: -5px -39px;
+  }
+}
+
+.icon-help{
+  background-position: -5px -73px;
+  &:hover{
+    background-position: -39px -73px;
+  }
+}
+
+.icon-contacts{
+  background-position: -107px -39px;
+  &:hover{
+    background-position: -73px -39px;
+  }
+}
+
+.icon-profile{
+  background-position: -73px -73px;
+  &:hover{
+    background-position: -107px -73px;
+  }
+}
+
+.icon-brand{
+  margin-top: 5px;
+  background-position: -5px -5px;
+}
+
+.image-top{
+ display: inline-block;
+ width: 100%;
+ height: 300px;
+ background: url('../images/sinagoga.jpg'); 
+ -webkit-background-size: cover;
+      -o-background-size: cover;
+         background-size: cover;
+}
+
+.variants{
+  padding: 20px;
+}
+
+.variants select{
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  padding: 10px 20px;
+}
+
+.welcome-messege{
+  text-transform: uppercase;
+  color: #006DF0;
+  margin: 20px;
+}
+
+.welcome-menu{
+  width: 220px;
+  margin: auto; 
+}
+
+.welcome-menu li{
+  padding: 10px;
+  border-bottom: 2px solid #006DF0;
+}
+
+@media screen and (max-width: 767px ) {
+  .hamburger-menu-expanded nav{
+    width: 80%;  
+  }
+  .bar {
+    right: 20px;
+  }
+}
